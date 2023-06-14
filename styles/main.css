@@ -1,0 +1,94 @@
+:root {
+  --primary: lightgreen;
+}
+img {
+  width: 200px;
+}
+.outside-div-class {
+  color: aqua;
+}
+.outside-div-class {
+  color: peru;
+}
+.outside-div-class .inside-div-first-class {
+  color: yellow;
+}
+.inside-div-second-class {
+  color: orange;
+}
+.inside-div-first-class {
+  color: red;
+}
+.inside-id {
+  color: teal;
+}
+h1 {
+  color: green;
+}
+.outside-div-class #blue-id {
+  color: darkcyan;
+}
+body .outside-div-class #blue-id {
+  color: pink;
+}
+
+/* body .outside-div-class .another-class {
+  color: purple;
+} */
+
+body {
+  .outside-div-class {
+    #blue-id {
+      color: pink;
+    }
+    .another-class {
+      color: purple;
+    }
+  }
+}
+
+#blue-id {
+  color: blue;
+}
+.flex-div {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1024px;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.container .heading {
+  text-align: center;
+}
+/* medium */
+@media only screen and (min-width: 480px) {
+  body {
+    .outside-div-class {
+      #blue-id {
+        color: gray;
+      }
+    }
+  }
+}
+/* large */
+@media only screen and (min-width: 768px) {
+  body {
+    .outside-div-class {
+      #blue-id {
+        color: var(--primary);
+      }
+    }
+  }
+}
+/* hd */
+@media only screen and (min-width: 1024px) {
+}
+/* menu full screen height */
+@media only screen and (min-width: 1162px) {
+}
+/* uhd */
+@media only screen and (min-width: 1536px) {
+}
